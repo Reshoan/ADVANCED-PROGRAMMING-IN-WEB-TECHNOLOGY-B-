@@ -1,0 +1,81 @@
+Next js is a react framework.
+Next is quite fast.
+It seperates server side and client side.
+
+
+pace.tsx generates layout.tsx and makes pace.tsx a child for that page.
+
+install:
+PS C:\Users\resho\Desktop\ADVANCED-PROGRAMMING-IN-WEB-TECHNOLOGY-B-\UsingNext> npx create-next-app@latest
+Need to install the following packages:
+create-next-app@15.3.2
+Ok to proceed? (y) y
+
+√ What is your project named? ... project
+√ Would you like to use TypeScript? ... Yes
+√ Would you like to use ESLint? ... Yes
+√ Would you like to use Tailwind CSS? ... Yes
+√ Would you like your code inside a `src/` directory? ... Yes
+√ Would you like to use App Router? (recommended) ... Yes
+√ Would you like to use Turbopack for `next dev`? ... No
+√ Would you like to customize the import alias (`@/*` by default)? ... No
+Creating a new Next.js app in C:\Users\resho\Desktop\ADVANCED-PROGRAMMING-IN-WEB-TECHNOLOGY-B-\UsingNext\project.
+
+Using npm.
+
+Initializing project with template: app-tw
+
+
+Installing dependencies:
+- react
+- react-dom
+- next
+
+Installing devDependencies:
+- typescript
+- @types/node
+- @types/react
+- @types/react-dom
+- @tailwindcss/postcss
+- tailwindcss
+- eslint
+- eslint-config-next
+- @eslint/eslintrc
+
+
+
+public folder in project contains images
+src contains app and by default app is called in the port
+
+in backend we made module, here we make component
+
+parent tag is importent for page.tsx
+
+practice promise with dynamic routing
+
+
+
+Will a layout.psx be created for home folder in src/app/?
+In Next.js 13+ (with the **App Router**), yes — each folder inside the `src/app` directory **can** (but doesn't have to) include its own `layout.tsx` file.
+
+Here’s how it works:
+
+### 📁 Structure Example
+
+```bash
+src/
+└── app/
+    ├── layout.tsx          ← Root layout (required)
+    ├── page.tsx            ← Root page
+    └── home/
+        ├── page.tsx        ← Renders your "hello" text
+        └── layout.tsx      ← Optional, specific layout for /home
+```
+
+### 🔍 So, to answer your question:
+
+No, **a `layout.tsx` file is not automatically created** in `home/`. You have to create it manually **if** you want a separate layout for that route.
+
+If you **don’t** add a `layout.tsx` in `home/`, the `home/page.tsx` will just use the **nearest parent layout**, which would be the root `src/app/layout.tsx`.
+
+Would you like help writing a `layout.tsx` file for `home/` that wraps your "hello" message?
