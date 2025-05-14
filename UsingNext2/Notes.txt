@@ -1,0 +1,11 @@
+how to make a component:
+use shortcuts
+rcc generates a class
+rsc genereates component
+
+
+anchor tag is bad because it reloads everything so we use link tag
+
+we cannot us  js directly in a tsx file.
+
+stop map function for client
